@@ -7,6 +7,7 @@
 #include "adc_config.h"
 #include "dac_config.h"
 #include "gpio_config.h"
+#include "lora.h"
 
 Tx_ORIUTG_Data_t oriutg_data = {0};
 #define MAX_AVG_TIME         (10)
@@ -46,18 +47,21 @@ uint16_t get_sample_count(void){
 	return sample_count;
 }
 
-void acumulator_sensor_data(uint16_t* ad_sample_data ){
-	
+void acumulator_sensor_data(uint32_t* ad_sample_data ){
+	uint16_t j =0;
 	if(ad_sample_data == NULL){
 		return;
 	}
-	for(uint16_t i = 0;i < SENSOR_DATA_LEN ; i++){
-		accumulator_data[i] += (ad_sample_data[i]&0x3ff);
+	for(uint16_t i = 0,j =0;i < SENSOR_DATA_LEN ; i+=2,j++){
+		accumulator_data[i] += (ad_sample_data[j]&0x3ff);
+		accumulator_data[i+1] += ((ad_sample_data[j]>>16));
+		debug_printf("%x,",ad_sample_data[j]);
+
 	}	
 }
 
 void acumulator_average(uint16_t* data){
-		for(uint16_t i = 0;i < SENSOR_DATA_LEN;i++){
+		for(uint16_t i = 0,j =0;i < SENSOR_DATA_LEN;i++){
 			accumulator_data[i] /= sample_count;
 			data[i] = accumulator_data[i];
 			debug_printf("%d,",data[i]);
@@ -77,10 +81,13 @@ void sample_start(Tx_ORIUTG_Data_t * Poriutg_tx_data,uint8_t avg_count){
 	}
 	startTick = Get_Tick();
 	sample_count = 1<<avg_count;
-//	sample_count = 1;
-		//开启定时器2，重复频率500HZ，开启采集
+		//开启定时器3，重复频率50HZ，开启采集
 	debug_printf("sample_count = %d\r\n",sample_count);
-
+	sample_flag_set();
+	enable_tiemr3_50hz();
+	while(get_sample_flag() && ( Get_Tick() - startTick) < timeout);
+	debug_printf("sample flag\r\n");
+	acumulator_average(Poriutg_tx_data->loraTxData.Data);
 }
 
 
@@ -103,10 +110,10 @@ void LoRa_execute_instruction(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriutg_d
 			debug_printf("plora->LoRaRxData_t.arg.gain = %d\r\n",plora->LoRaRxData_t.arg.gain);
 			debug_printf("plora->LoRaRxData_t.arg.avg= %d\r\n",plora->LoRaRxData_t.arg.avg);
 			//将 flash 存储的参数取出
-			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
+//			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
 			debug_printf("probeGainAvg addr : %p\r\n",probeGainAvg);
 			//擦除页
-			fmc_erase_pages(FMC_PRAREMETER_WRITE_START_ADDR);
+
 
 			//更改参数
 			if((plora->LoRaRxData_t.arg.channle_Id > 0) && (plora->LoRaRxData_t.arg.channle_Id <= 16)){
@@ -125,28 +132,27 @@ void LoRa_execute_instruction(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriutg_d
 				debug_printf("GAIN: %d\r\n",sensorParam[i].gain );
 				debug_printf("AVG: %d\r\n",sensorParam[i].avg);
 			}
-		if(writeFlash_X_Word(CHANNALE_PRAREMETER,MAX_PROBE_NUM*2,probeGainAvg)){
-			debug_printf("\r\nset gain succeed\r\n");
-			loraTxData(plora, oriutg_data,'O');
-		}else{
-			debug_printf("\r\nset gain failed\r\n");
-			loraTxData(plora, oriutg_data,'F');
-		}
+//		if(writeFlash_X_Word(CHANNALE_PRAREMETER,MAX_PROBE_NUM*2,probeGainAvg)){
+//			debug_printf("\r\nset gain succeed\r\n");
+//			loraTxData(plora, oriutg_data,'O');
+//		}else{
+//			debug_printf("\r\nset gain failed\r\n");
+//			loraTxData(plora, oriutg_data,'F');
+//		}
 		memset(plora->LoRaRxData_t.lora_rxBuf,0,256);
 		break ;
 		case Jion_Network_Instruction:
-			debug_printf("\r\n recieve jion network instruction \r\n");
-			debug_printf("sensorID: %llu\r\n",readFlashDoubleWord(SENSOR_ID_ADDRL));
+			debug_printf("\r\n recieve join network instruction \r\n");
+			debug_printf("sensorID: %llu\r\n",read_sensorid_form_flash(SENSOR_ID_ADDR));
 			debug_printf("networkID  : %llu\r\n",plora->LoRaRxData_t.netIn.sensorID);
-			if(plora->LoRaRxData_t.netIn.sensorID == readFlashDoubleWord(SENSOR_ID_ADDRL)){
-				debug_printf("\r\nRX ID\r\n");
-				fmc_erase_pages(FMC_NETWORK_WRITE_START_ADDR);
-				debug_printf("\r\nRX ID\r\n");
-				writeFlashWord(NETWORK_ID_BASE, plora->LoRaRxData_t.netIn.networkId);
-				debug_printf("rxsensorID  : %0x\r\n",plora->LoRaRxData_t.netIn.networkId);
-				debug_printf("rxsensorID  : %0x\r\n",readFlashWord(NETWORK_ID_BASE));
+			if(plora->LoRaRxData_t.netIn.sensorID == read_sensorid_form_flash(SENSOR_ID_ADDR)){
+				if (FMC_READY == write_network_id_to_flash(SENSOR_PARAMETER_ADDR,plora->LoRaRxData_t.netIn.networkId)){
+						loraTxData(plora, oriutg_data,'O');
+				}else{
+					debug_printf("networkid write failed \r\n");
+				}
 			}
-				loraTxData(plora, oriutg_data,'O');
+				
 			break ;
 		case Awake_Detect_Instruction:
 				memset(plora->LoRaRxData_t.lora_rxBuf,0,256);
@@ -203,24 +209,27 @@ void lora_passivity_communication(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriu
 				debug_printf("poweron\r\n");
 				/*更新参数*/
 				//SensorID
-				oriutg_data->loraTxData.sensorId = readFlashDoubleWord(SENSOR_ID_ADDRL);
+				oriutg_data->loraTxData.sensorId = read_sensorid_form_flash(SENSOR_ID_ADDR);
 				//数据长度
 				oriutg_data->loraTxData.length = sizeof(Tx_ORIUTG_Data_t);
 				//网络号
-				oriutg_data->loraTxData.networkId = readFlashWord(NETWORK_ID_BASE) ;
+				oriutg_data->loraTxData.networkId = read_network_id_from_flash(NETWORK_ID_ADDR);
 				//增益
-				probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
-				oriutg_data->loraTxData.gain = *(probeGainAvg+2*(oriutg_data->loraTxData.channel_num-1));
-				set_gain(oriutg_data->loraTxData.gain);
+//				probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
+//				oriutg_data->loraTxData.gain = *(probeGainAvg+2*(oriutg_data->loraTxData.channel_num-1));
+//				set_gain(oriutg_data->loraTxData.gain);
 				debug_printf("gain = %d \r\n",oriutg_data->loraTxData.gain);
 				//平均
 //				oriutg_data->loraTxData.average = *(probeGainAvg+2*(oriutg_data->loraTxData.channel_num-1)+1);
 				oriutg_data->loraTxData.average = 10;
 				debug_printf("avrage = %d \r\n",oriutg_data->loraTxData.average);
 				//电量采集
-				oriutg_data->loraTxData.Battery = BatGetPrecent();
+				oriutg_data->loraTxData.Battery = 100;
+//	BatGetPrecent();
 				debug_printf("battery  = \r\n");
-				sample_start(oriutg_data,10);
+				
+				//开始数据采集
+				sample_start(oriutg_data,1);
 				//温度采集
 				delay_1ms(1);
 //				oriutg_data->loraTxData.temperate = ThermGetLastTemp() ;

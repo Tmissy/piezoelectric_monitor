@@ -21,6 +21,8 @@ static uint16_t send_size = 0;
 
 #define TWELVE_HOURS_TIME   (43200)
 #define MAX_WAKEUP_TIME     (65535)
+
+#define LORA_SPI    SPI1
 /**
 *@brief		通信模块初始化
 *@param     无
@@ -33,10 +35,9 @@ bool communication_init()
 	uint8_t err = 0;
 	if (lsUsedLora)
 	{
-		lora_ctrl_init(&SX1278_hw, &SX1278,&lora_ctrl, SPI0);
-		SX1278_LORA_CAD(&SX1278);
+		lora_ctrl_init(&SX1278_hw, &SX1278,&lora_ctrl, LORA_SPI);
+//		SX1278_LORA_CAD(&SX1278);
 		delay_1ms(3);
-
 	}
 	else
 	{
@@ -60,9 +61,10 @@ bool communication_init()
 *			false: 操作失败
 */
 bool communication_reboot()
-{
+{	
+	rcu_periph_clock_enable(RCU_GPIOE);
 	lsUsedLora = gpio_input_bit_get(NB_LORA_SEL_GPIO_PROT,NB_LORA_SEL_PIN);
-
+	debug_printf("NB port %d\r\n",gpio_input_bit_get(NB_LORA_SEL_GPIO_PROT,NB_LORA_SEL_PIN));
 	if (lsUsedLora)
 	{
 		debug_printf("lora init\r\n");
@@ -128,7 +130,7 @@ void set_Communication_RTC_Time()
 	else
 	{
 			uint32_t * temp_sample_time = NULL;	
-			temp_sample_time = readFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t));
+//			temp_sample_time = readFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t));
 			memcpy((uint8_t*)&sample_time,(uint8_t*)temp_sample_time,sizeof(sleep_time_t));
 			debug_printf(" sample_time.flag %x\r\n",sample_time.flag);
 			debug_printf(" sample_time.wakeup_count %x\r\n",sample_time.wakeup_count);
@@ -140,22 +142,20 @@ void set_Communication_RTC_Time()
 				sample_sec -= sample_time.wakeup_count*MAX_WAKEUP_TIME;
 			}
 			if(sample_time.flag != 0xaaaa){
-				writeFlash_X_Word(FWDGT_RESET_FLAG,1,0);
+//				writeFlash_X_Word(FWDGT_RESET_FLAG,1,0);
 				rtc_configuration(TWELVE_HOURS_TIME);
 				debug_printf ("sample_time.flag = aaaa\r\n");
 			}else{
 			if(sample_sec >MAX_WAKEUP_TIME){
 				sample_time.wakeup_count++;
-				fmc_erase_pages(RTC_STANDBY_TIME_ADDR);	
-				writeFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t),(uint32_t*) &sample_time);
+//				writeFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t),(uint32_t*) &sample_time);
 				rtc_configuration(MAX_WAKEUP_TIME);
 				debug_printf ("MAX_WAKEUP_TIME s\r\n");
 			}
 			else{
-				writeFlash_X_Word(FWDGT_RESET_FLAG,1,0);
-				sample_time.wakeup_count = 0;
-				fmc_erase_pages(RTC_STANDBY_TIME_ADDR);	
-				writeFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t),(uint32_t*) &sample_time);
+//				writeFlash_X_Word(FWDGT_RESET_FLAG,1,0);
+				sample_time.wakeup_count = 0;	
+//				writeFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t),(uint32_t*) &sample_time);
 				rtc_configuration(sample_sec);
 				debug_printf ("sample_time.flag  wake up \r\n");
 			}
@@ -179,7 +179,7 @@ void wake_Up_Count()
 	else
 	{
 		uint32_t * temp_sample_time = NULL;	
-		temp_sample_time = readFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t));	
+//		temp_sample_time = readFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sleep_time_t)/sizeof(uint32_t));	
 		memcpy((uint8_t*)&sample_time,(uint8_t*)temp_sample_time,sizeof(sleep_time_t));
 		debug_printf(" sample_time.flag %x\r\n",sample_time.flag);
 		debug_printf(" sample_time.wakeup_count %x\r\n",sample_time.wakeup_count);
@@ -296,7 +296,7 @@ bool communication_req()
 		debug_printf("detect\r\n");
 		loraSetMode(&lora_ctrl, LORA_SLAVER);
 		lora_passivity_communication(&lora_ctrl,&oriutg_data);
-		SX1278_sleep(lora_ctrl.pSX1278);
+//		SX1278_sleep(lora_ctrl.pSX1278);
 		return true;
 	}
 	else
@@ -368,7 +368,7 @@ bool communication_load_param()
 	{
 		debug_printf("communication_load_param\r\n");
 		if(!ReLoadSersorId())suc = false;
-		if(!ReLoad_Ip_Port())suc = false;
+		reload_ip_port(SENSOR_PARAMETER_ADDR);
 		//第一次上电加载电池电量
 		if(*(__IO uint32_t *)BATTERY_CAPACITY_FLAG != 0xaaaaaaaa){
 			WriteFlashBatteryCapacity(BATTERY_FULL_CAPACITY);
@@ -378,7 +378,7 @@ bool communication_load_param()
 		if(*(__IO uint32_t *)BATTERY_CAPACITY_FLAG != 0xaaaaaaaa){
 			WriteFlashBatteryCapacity(LORA_COLLECT_DATA_MAX_COUNTER);
 		}
-		reload_lora_parameter();
+//		reload_lora_parameter();
 	}
 	return suc;
 }

@@ -49,3 +49,4 @@
 .\objects\main.o: ..\User\Driver\SX1278\sx1278.h
 .\objects\main.o: ..\User\Hardware\inc\dci_config.h
 .\objects\main.o: ..\User\APP\inc\communicate.h
+.\objects\main.o: ..\User\APP\inc\fmc_flash.h

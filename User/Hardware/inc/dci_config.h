@@ -3,7 +3,7 @@
 
 #include "gd32f4xx.h"
 
-#define SAMPLING_DEPTH (4096)
+#define SAMPLING_DEPTH (2048)
 #define DCI_DR_ADDRESS     (0x50050028U)		//DCI的4字节数据存储器
 
 #define SENSOR_DATA_LEN (2048)
@@ -34,7 +34,9 @@ typedef struct loradata_t
 	};
 }Tx_ORIUTG_Data_t;
 
-void dci_config(void);
+extern uint32_t  dci_sampling_value_buffer[SAMPLING_DEPTH];
 
+void dci_config(void);
+void dci_dma_config(void);
 #endif 
 

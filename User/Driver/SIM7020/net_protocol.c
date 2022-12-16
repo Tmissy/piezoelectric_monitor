@@ -245,7 +245,7 @@ bool net_response_sample(bool ls_retra, bool ls_one_pack, uint8_t part, uint8_t 
 	net_set_close_sta(false);
 	net_set_send_sta(false);
 
-	probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
+//	probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
 	gain = *(probeGainAvg+2*ch);
 	set_gain(gain);
 	if(!ls_retra)			
@@ -451,7 +451,7 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 	uint16_t temp_data = 0;
 		uint32_t * probeGainAvg = NULL;
 	
-	static uint32_t temp_ip[6]={0}; //temp_ip[5]存放ip_port;
+	static ip_prot_t* temp_ip ={0}; //temp_ip[5]存放ip_port;
 	
 	switch (operation_type)
 	{
@@ -491,10 +491,9 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 		//解析通道号
 			temp_data = 100 * (pdata[2]-'0') + 10* (pdata[3]-'0') + (pdata[4]-'0');
 			
-			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
+//			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
 			debug_printf("probeGainAvg addr : %p\r\n",probeGainAvg);
 			//擦除页
-			fmc_erase_pages(FMC_PRAREMETER_WRITE_START_ADDR);
 
 			//更改参数
 		
@@ -514,11 +513,11 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 				debug_printf("GAIN: %d\r\n",sensorParam[i].gain );
 				debug_printf("AVG: %d\r\n",sensorParam[i].avg);
 			}
-		if(writeFlash_X_Word(CHANNALE_PRAREMETER,MAX_PROBE_NUM*2,probeGainAvg)){
-			debug_printf("\r\nset gain succeed\r\n");
-		}else{
-			debug_printf("\r\nset gain failed\r\n");
-		}
+//		if(writeFlash_X_Word(CHANNALE_PRAREMETER,MAX_PROBE_NUM*2,probeGainAvg)){
+//			debug_printf("\r\nset gain succeed\r\n");
+//		}else{
+//			debug_printf("\r\nset gain failed\r\n");
+//		}
 			net_response_operation();
 		break;
 		case RECV_OPERATION_SET_TIME:
@@ -528,8 +527,7 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 			sample_time.sec = 0;//秒
 			sample_time.flag = 0xaaaa;
 			sample_time.wakeup_count = 0;
-			fmc_erase_pages(RTC_STANDBY_TIME_ADDR);	
-			writeFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sample_time)/sizeof(uint32_t),(uint32_t*) &sample_time);
+//			writeFlash_X_Word(RTC_STANDBY_TIME_ADDR,sizeof(sample_time)/sizeof(uint32_t),(uint32_t*) &sample_time);
 			debug_printf("sample time : %02d:%02d:%02d\r\n",sample_time.hour, sample_time.min, sample_time.sec);
 			debug_printf(" sample_time.flag %x\r\n",sample_time.flag);
 			debug_printf(" sample_time.hour %d\r\n",sample_time.hour);
@@ -597,7 +595,7 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 			net_send_size += 2;
 			uint32_t * probeGainAvg = 0;
 			uint8_t gain = 0;
-			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
+//			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
 			gain = *(probeGainAvg+2*temp_data);
 			net_send_buf[net_send_size] = gain;
 			net_send_buf[net_send_size+1] = ';';
@@ -670,13 +668,13 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 //			if(pdata[2] == 1){
 //				
 //			}else{
-				temp_ip[0] = 0xaaaa;
-				temp_ip[1] = pdata[3];
-				temp_ip[2] = pdata[4];
-				temp_ip[3] = pdata[5];
-				temp_ip[4] = pdata[6];
-				temp_ip[5] = pdata[7]<<8;
-				temp_ip[5] |= pdata[8];
+				temp_ip->flag = 0xaaaaaaaa;
+				temp_ip->ip[0] = pdata[3];
+				temp_ip->ip[1] = pdata[4];
+				temp_ip->ip[2] = pdata[5];
+				temp_ip->ip[3] = pdata[6];
+				temp_ip->prot = pdata[7]<<8;
+				temp_ip->prot |= pdata[8];
 				debug_printf("ip:%d\r\n",pdata[3]);
 				debug_printf("ip:%d\r\n",pdata[4]);
 				debug_printf("ip:%d\r\n",pdata[5]);
@@ -697,7 +695,8 @@ static bool net_operation_handle(uint8_t operation_type, uint8_t* pdata)
 				net_send_buf[net_send_size+1] = ';';
 				net_send_size += 2;			
 				//发送		
-				writeFlash_X_Word(NB_IP_PROT_ADDR,6,temp_ip);
+				write_ip_prot_to_flash(SENSOR_PARAMETER_ADDR,temp_ip);
+
 				net_response_operation();
 //			}
 		break ;

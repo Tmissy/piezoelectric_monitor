@@ -1,9 +1,7 @@
 #ifndef _DCI_ADC_H_
 #define _DCI_ADC_H_
 
-#include "port.h"
 
-#define DCI_DR_ADDRESS     (0x50050028U)		//DCI的4字节数据存储器
 
 #define Sampling_number		4096				//DCI-DMA采集传输数据量
 

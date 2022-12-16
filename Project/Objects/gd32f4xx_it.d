@@ -39,3 +39,9 @@
 .\objects\gd32f4xx_it.o: ..\User\Hardware\inc\usart_config.h
 .\objects\gd32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\gd32f4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\gd32f4xx_it.o: ..\User\Hardware\inc\dci_config.h
+.\objects\gd32f4xx_it.o: ..\User\APP\inc\service_logic.h
+.\objects\gd32f4xx_it.o: ..\User\Hardware\inc\timer_config.h
+.\objects\gd32f4xx_it.o: ..\User\APP\inc\lora.h
+.\objects\gd32f4xx_it.o: ..\User\Driver\SX1278\sx1278.h
+.\objects\gd32f4xx_it.o: ..\User\Hardware\inc\gpio_config.h

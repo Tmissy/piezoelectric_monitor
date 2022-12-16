@@ -75,6 +75,6 @@ uint16_t* get_sample_data();
 void sample_start(Tx_ORIUTG_Data_t * Poriutg_tx_data,uint8_t avg_count);
 void sample_flag_clear(void);
 bool get_sample_flag(void);
-void acumulator_sensor_data(uint16_t* ad_sample_data );
+void acumulator_sensor_data(uint32_t* ad_sample_data );
 void lora_passivity_communication(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriutg_data);
 #endif /* GD32E50X_EXMC_H */

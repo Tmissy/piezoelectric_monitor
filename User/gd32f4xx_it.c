@@ -38,6 +38,9 @@ OF SUCH DAMAGE.
 #include "gd32f4xx_it.h"
 #include "systick.h"
 #include "usart_config.h"
+#include "dci_config.h"
+#include "service_logic.h"
+#include "gpio_config.h"
 
 /*!
     \brief      this function handles NMI exception
@@ -132,6 +135,7 @@ void PendSV_Handler(void)
 }
 
 
+static  volatile uint16_t sample_count = 0;
 /*!
     \brief      this function handles TIMER2 interrupt request.
     \param[in]  none
@@ -142,15 +146,24 @@ void TIMER3_IRQHandler(void)
 {
 		static uint8_t firstPowerFlag = 0;
     if(SET == timer_interrupt_flag_get(TIMER3, TIMER_INT_UP)){
-//			debug_printf("timer3\r\n");
-//			if(get_sample_flag()){
-//				sample_count++;
-//				if(sample_count > get_sample_count()){
-//					sample_flag_clear();
-//					sample_count = 0;
-//				}
-//			}
+			if(get_sample_flag()){
+				sample_count++;
+				if(sample_count > get_sample_count()){
+				debug_printf("sample_count%d\r\n",sample_count);
+					debug_printf("get_sample_count()%d\r\n",get_sample_count());
+					sample_flag_clear();
+					timer_disable(TIMER3);
+					sample_count = 0;
+				}
+			}
 			
+			dci_disable();						//失能DCI
+			dma_channel_disable(DMA1,DMA_CH1);	//使能DMA的CH1
+			dci_config();
+			dci_dma_config();
+			
+//			dci_enable();						//使能DCI
+//			dma_channel_enable(DMA1,DMA_CH1);	//使能DMA的CH1
 			timer_interrupt_flag_clear(TIMER3, TIMER_INT_UP);
     }
 }
@@ -166,10 +179,38 @@ void TIMER1_IRQHandler(void)
 		static uint8_t firstPowerFlag = 0;
     if(SET == timer_interrupt_flag_get(TIMER1, TIMER_INT_UP)){
 			timer_disable(TIMER1);
+			dci_enable();						//使能DCI
+			dma_channel_enable(DMA1,DMA_CH1);	//使能DMA的CH1
+			gpio_bit_reset(DCI_DATA_VALIDITE_PORT,DCI_DATA_VALIDITE_PIN);
 			timer_interrupt_flag_clear(TIMER1, TIMER_INT_UP);
     }
 }
 
+
+/*!
+    \brief      this function handles TIMER2 interrupt request.
+    \param[in]  none
+    \param[out] none
+    \retval     none
+*/
+void TIMER7_UP_TIMER12_IRQHandler(void)
+{
+		static uint16_t count = 0;
+		static uint8_t firstPowerFlag = 0;
+    if(SET == timer_interrupt_flag_get(TIMER7, TIMER_INT_UP)){
+
+			timer_disable(TIMER1);
+			timer_disable(TIMER7);
+			gpio_bit_set(DCI_DATA_VALIDITE_PORT,DCI_DATA_VALIDITE_PIN);
+			acumulator_sensor_data(dci_sampling_value_buffer);
+			dci_disable();						//失能DCI
+			dma_channel_disable(DMA1,DMA_CH1);	//使能DMA的CH1
+			dci_config();
+			dci_dma_config();
+			
+			timer_interrupt_flag_clear(TIMER7, TIMER_INT_UP);
+    }
+}
 
 
 /*!
@@ -181,4 +222,5 @@ void TIMER1_IRQHandler(void)
 void SysTick_Handler(void)
 {
     delay_decrement();
+		Inc_Tick();
 }

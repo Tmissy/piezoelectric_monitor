@@ -232,7 +232,8 @@ static inline void loraSendDataFrame(Lora_Control_Def *plora, Tx_ORIUTG_Data_t *
 	case 'O':
 		for(num = 0;num < 3;num++) {
 			loraSendPkg(plora);
-			delay_1ms(800);
+			delay_1ms(10);
+
 		}
 		break;
 	default:
@@ -254,14 +255,14 @@ static inline void loraAddDataPkginst(Lora_Control_Def *plora, uint8_t inst)
 {
 	switch(inst){
 	case 'R':
-		plora->lora_data.LoRaAnserPkg.networkId = readFlashWord(NETWORK_ID_BASE);
+		plora->lora_data.LoRaAnserPkg.networkId = read_network_id_from_flash(NETWORK_ID_ADDR);
 		plora->lora_data.LoRaAnserPkg.instruction = inst;
 		break ;
 	case 'D':
 	case 'C':
 	case 'E':
 	case 'O':
-		plora->lora_data.data_pkg.networkId = readFlashWord(NETWORK_ID_BASE);
+		plora->lora_data.data_pkg.networkId = read_network_id_from_flash(NETWORK_ID_ADDR);
 		plora->lora_data.data_pkg.instruction = inst;
 		break ;
 	case 'F':
@@ -321,10 +322,10 @@ uint8_t loraDealData(Lora_Control_Def *plora, uint8_t len)
 	switch(len){
 	case LORA_DATAPKG_INST_LEN:
 		if (plora->LoRaRxData_t.LoRaCommand.crc16 ==  crc16((const char*) &plora->LoRaRxData_t.LoRaCommand, sizeof (LoRaCommand_t)-sizeof(plora->LoRaRxData_t.LoRaCommand.crc16))){
-			debug_printf("sensorID: %llu\r\n",readFlashDoubleWord(SENSOR_ID_ADDRL));
+			debug_printf("sensorID: %llu\r\n",read_sensorid_form_flash(SENSOR_ID_ADDR));
 			debug_printf("rxsensorID  : %d\r\n",plora->LoRaRxData_t.LoRaCommand.networkId);
-			debug_printf("rxsensorID  : %d\r\n",readFlashWord(NETWORK_ID_BASE));
-			if(readFlashWord(NETWORK_ID_BASE) == plora->LoRaRxData_t.LoRaCommand.networkId ){
+			debug_printf("rxsensorID  : %d\r\n",read_network_id_from_flash(NETWORK_ID_ADDR));
+			if(read_network_id_from_flash(NETWORK_ID_ADDR)== plora->LoRaRxData_t.LoRaCommand.networkId ){
 				inst = plora->LoRaRxData_t.LoRaCommand.command;
 				return inst;
 			}
@@ -335,9 +336,9 @@ uint8_t loraDealData(Lora_Control_Def *plora, uint8_t len)
 		break;
 	case LORA_NETIN_LEN:
 		if(plora->LoRaRxData_t.netIn.crc16 == crc16((const char*) &plora->LoRaRxData_t.netIn, sizeof (netIn_t)-sizeof(plora->LoRaRxData_t.netIn.crc16))){
-			debug_printf("sensorID: %llu\r\n",readFlashDoubleWord(SENSOR_ID_ADDRL));
+			debug_printf("sensorID: %llu\r\n",read_sensorid_form_flash(SENSOR_ID_ADDR));
 			debug_printf("networkID  : %llu\r\n",plora->LoRaRxData_t.netIn.sensorID);
-			if(readFlashDoubleWord(SENSOR_ID_ADDRL) == plora->LoRaRxData_t.netIn.sensorID){
+			if(read_sensorid_form_flash(SENSOR_ID_ADDR) == plora->LoRaRxData_t.netIn.sensorID){
 				inst = plora->LoRaRxData_t.netIn.instruction;
 				debug_printf("LOSS_PKG_LEN  inst %d\r\n",inst);
 				return inst;
@@ -349,7 +350,7 @@ uint8_t loraDealData(Lora_Control_Def *plora, uint8_t len)
 		break;
 	case LOSS_PKG_LEN:
 		if(plora->LoRaRxData_t.lossPkg.crc16 == crc16((const char*) &plora->LoRaRxData_t.lossPkg, sizeof (plora->LoRaRxData_t.lossPkg)-sizeof(plora->LoRaRxData_t.lossPkg.crc16))){
-			if(readFlashWord(NETWORK_ID_BASE) == plora->LoRaRxData_t.lossPkg.networkId){
+			if(read_network_id_from_flash(NETWORK_ID_ADDR) == plora->LoRaRxData_t.lossPkg.networkId){
 				inst = plora->LoRaRxData_t.lossPkg.instruction;
 				return inst;
 			}

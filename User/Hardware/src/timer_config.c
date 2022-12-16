@@ -29,6 +29,21 @@ void timer_plus_output_gpio_config(){
 //定时器0为定时器3从定时器，定时器3产生更新事件，定时器0同时启动，配置单脉冲模式，重复计数60次，关闭定时器3
 //定时器1为定时器3的从定时器，定时3ms,关闭定时器3，触发DMA转换
 //定时器2为定时器1的从定时器，定时器1产生更新时间开启定时器2，配置单脉冲模式，重复计数0
+//定时器4为定时器1的从定时器，定时器1产生更新事件开启定时器4，配置1ms定时，数据累加，关闭定时器
+
+/****************************************采集流程***************************************************
+**1. 开启定时器3定时；******************************************************************************
+**2. 定时器3产生更新事件定时器0启动，发射PWM1波形***************************************************
+**3. 定时器3产生更新事件的同时开启定时器1，定时时间3ms**********************************************
+**4. 定时器1产生更新事件****************************************************************************
+					a.触发定时器2，使能定时器2中断，发射单脉冲，进入中断后关闭定时器2*************************
+					b. 开启DCI使能，开启AD采集时钟，使能DMA **************************************************
+**5. 定时器1产生更新事件的，触发定时器4，定时时间1ms,使能定时器4中断********************************
+**6. 定时器4产生更新事件****************************************************************************
+					a. 关闭DCI，关闭DMA，重新配置DMA**********************************************************
+					b. 定时器更新事件产生后，关闭定时器1******************************************************
+**7. 采集完成，进入定时器3中断，关闭所有的定时器，关闭DCI，关闭DMA**********************************
+***************************************************************************************************/
 
 
 /*!
@@ -66,11 +81,12 @@ void timer3_master_config(void)
 		
 		/*配置定时器0和定时器3级联，定时器0为主模式，使能定时器0启动定时器3*/
 		 /* select the master slave mode */
+		 
     timer_master_slave_mode_config(TIMER3, TIMER_MASTER_SLAVE_MODE_ENABLE);
 		//发送使能信号作为触发的输出
 		timer_master_output_trigger_source_select(TIMER3, TIMER_TRI_OUT_SRC_UPDATE);
-    /* enable a TIMER */  
-		timer_enable(TIMER3);
+ /* enable a TIMER */  
+//		timer_enable(TIMER3);
 }
 
 
@@ -227,7 +243,7 @@ void timer2_slave1_config(void)
     timer_ocintpara.outputnstate = TIMER_CCXN_DISABLE;
     timer_ocintpara.ocpolarity   = TIMER_OC_POLARITY_LOW;
     timer_ocintpara.ocnpolarity  = TIMER_OCN_POLARITY_LOW;
-    timer_ocintpara.ocidlestate  = TIMER_OC_IDLE_STATE_LOW;
+    timer_ocintpara.ocidlestate  = TIMER_OC_IDLE_STATE_HIGH;
     timer_ocintpara.ocnidlestate = TIMER_OC_IDLE_STATE_LOW;
 
     timer_channel_output_config(TIMER2,TIMER_CH_2,&timer_ocintpara);
@@ -249,45 +265,87 @@ void timer2_slave1_config(void)
 		timer_input_trigger_source_select(TIMER2,TIMER_SMCFG_TRGSEL_ITI1);
 				 /* slave mode selection: TIMER0  事件模式*/
     timer_slave_mode_select(TIMER2,TIMER_SLAVE_MODE_EVENT);
-//	
-//		timer_enable(TIMER2);
+
 }
-
-
-
-
-
-void timer4_config(void)
+void timer7_slave1_config(void)
 {
-    /* ----------------------------------------------------------------------------
-    TIMER2 Configuration: 
-    TIMER2CLK = SystemCoreClock/18000 = 10KHz, the period is 1s(10/10000 = 1ms).
-    ---------------------------------------------------------------------------- */
-    timer_oc_parameter_struct timer_ocinitpara;
+				    /* enable the peripherals clock */
+		rcu_periph_clock_enable(RCU_TIMER7);
+    rcu_timer_clock_prescaler_config(RCU_TIMER_PSC_MUL4);//配置定时器时钟，就相当于是倍频4，50M*4=200M
+		timer_oc_parameter_struct timer_ocintpara;
     timer_parameter_struct timer_initpara;
 
-    /* enable the peripherals clock */
-    rcu_periph_clock_enable(RCU_TIMER4);
-
     /* deinit a TIMER */
-    timer_deinit(TIMER4);
+    timer_deinit(TIMER7);
 
-    /* TIMER2 configuration */
-    timer_initpara.prescaler         = 179;
+    /* TIMER0 configuration */
+    timer_initpara.prescaler         = 199;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
     timer_initpara.period            = 999;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
-    timer_init(TIMER4, &timer_initpara);
+    timer_initpara.repetitioncounter = 0;
+    timer_init(TIMER7,&timer_initpara);
 
-    /* enable the TIMER interrupt */
-		timer_interrupt_flag_clear(TIMER4, TIMER_INT_UP);
-    timer_interrupt_enable(TIMER4, TIMER_INT_UP);
-		
+	    /* enable the TIMER interrupt */
+		timer_interrupt_flag_clear(TIMER7, TIMER_INT_UP);
+    timer_interrupt_enable(TIMER7, TIMER_INT_UP);
 
+    /* auto-reload preload enable */
+    timer_auto_reload_shadow_disable(TIMER7);
 		
-    /* enable a TIMER */
-		timer_enable(TIMER4);
+		/*配置定时器2作为定时器0的从模式，定时器0启动，定时器2也启动*/
+				 /* select the master slave mode */
+    timer_master_slave_mode_config(TIMER7, TIMER_MASTER_SLAVE_MODE_ENABLE);
+				//配置定时器的触发源来自定时器0
+		timer_input_trigger_source_select(TIMER7,TIMER_SMCFG_TRGSEL_ITI1);
+				 /* slave mode selection: TIMER0  事件模式*/
+    timer_slave_mode_select(TIMER7,TIMER_SLAVE_MODE_EVENT);
+	
+	
+	
+//    /* ----------------------------------------------------------------------------
+//    TIMER2 Configuration: 
+//    TIMER2CLK = SystemCoreClock/18000 = 10KHz, the period is 1s(10/10000 = 1ms).
+//    ---------------------------------------------------------------------------- */
+//	
+//		/* enable the peripherals clock */
+//		rcu_periph_clock_enable(RCU_TIMER4);
+//    rcu_timer_clock_prescaler_config(RCU_TIMER_PSC_MUL4);//配置定时器时钟，就相当于是倍频4，50M*4=200M
+//	
+//    timer_oc_parameter_struct timer_ocinitpara;
+//    timer_parameter_struct timer_initpara;
+
+//    /* deinit a TIMER */
+//    timer_deinit(TIMER4);
+
+//    /* TIMER2 configuration */
+//    timer_initpara.prescaler         = 199;
+//    timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
+//    timer_initpara.counterdirection  = TIMER_COUNTER_UP;
+//    timer_initpara.period            = 999;
+//    timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
+//    timer_init(TIMER4, &timer_initpara);
+
+//    /* enable the TIMER interrupt */
+//		timer_interrupt_flag_clear(TIMER4, TIMER_INT_UP);
+//    timer_interrupt_enable(TIMER4, TIMER_INT_UP);
+//		
+//		 /* auto-reload preload enable */
+//    timer_auto_reload_shadow_enable(TIMER4);
+
+//				/*配置定时器2作为定时器0的从模式，定时器0启动，定时器2也启动*/
+//				 /* select the master slave mode */
+//    timer_master_slave_mode_config(TIMER4, TIMER_MASTER_SLAVE_MODE_ENABLE);
+//				//配置定时器的触发源来自定时器0
+//		timer_input_trigger_source_select(TIMER4,TIMER_SMCFG_TRGSEL_ITI1);
+//				 /* slave mode selection: TIMER0  事件模式*/
+//    timer_slave_mode_select(TIMER4,TIMER_SLAVE_MODE_EVENT);
+}
+
+void enable_tiemr3_50hz(){
+    /* enable a TIMER */  
+		timer_enable(TIMER3);
 }
 
 void timer_config(){
@@ -295,17 +353,11 @@ void timer_config(){
 	timer1_master3_slave1_config();
 	timer2_slave1_config();
 	timer3_master_config();
+	timer7_slave1_config();
 }
 
-void enable_timer2_500Hz(){
-//	timer_interrupt_enable(TIMER2, TIMER_INT_UP);
-	timer_enable(TIMER2);
-}
 
-void enable_timer3_200us(){
-//	timer_interrupt_enable(TIMER3, TIMER_INT_UP);
-//	timer_enable(TIMER3);
-}
+
 
 void TIM_Reset_Timeout(void)
 {

@@ -229,7 +229,7 @@ int SX1278_LoRaEntryRx(SX1278_t * module, uint8_t length, uint32_t timeout) {
 	while (1) {
 		if ((SX1278_SPIRead(module, LR_RegModemStat) & 0x04) == 0x04) {	//Rx-on going RegModemStat
 			module->status = RX;
-//			debug_printf("rx mode \r\n");
+			debug_printf("rx mode \r\n");
 			return 1;
 		}
 		if (--timeout == 0) {
@@ -283,6 +283,7 @@ int SX1278_LoRaEntryTx(SX1278_t * module, uint8_t length, uint32_t timeout) {
 	while (1) {
 		temp = SX1278_SPIRead(module, LR_RegPayloadLength);
 		if (temp == length) {
+			debug_printf ("lora tx mode\r\n");
 			module->status = TX;
 			return 1;
 		}
@@ -322,7 +323,7 @@ int SX1278_LoRaTxPacket(SX1278_t * module, uint8_t* txBuffer, uint8_t length, ui
 }
 
 void SX1278_begin(SX1278_t * module, uint8_t frequency, uint8_t power,
-		uint8_t LoRa_Rate, uint8_t LoRa_BW, uint8_t packetLength) {
+	uint8_t LoRa_Rate, uint8_t LoRa_BW, uint8_t packetLength) {
 	SX1278_hw_init(module->hw);
 	module->frequency = frequency;
 	module->power = power;

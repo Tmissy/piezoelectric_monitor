@@ -45,3 +45,4 @@
 .\objects\fmc_flash.o: ..\User\APP\inc\lora.h
 .\objects\fmc_flash.o: ..\User\Driver\SX1278\sx1278.h
 .\objects\fmc_flash.o: ..\User\Hardware\inc\dci_config.h
+.\objects\fmc_flash.o: ..\User\systick\systick.h

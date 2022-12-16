@@ -69,13 +69,17 @@
 #define POWER_PWM1_PIN         		GPIO_PIN_7
 #define POWER_PWM2_PIN 						GPIO_PIN_0
 
-/* AD8330 CONTORL */
-#define  VGA_EN_PROT     				 	GPIOC
+/* VGA AD8330 CONTORL */
+#define  VGA_EN_PORT     				 	GPIOC
 #define  GAIN_CONTROL_PROT      	GPIOA
 
 #define  VGA_EN_PIN       				GPIO_PIN_7
 #define  GAIN_CONTROL_PIN      		GPIO_PIN_5
 
+/*ADC  MS9280 Òý½Å*/
+#define ADC_STDBY_H_PORT          GPIOB
+#define ADC_STDBY_H_PIN           GPIO_PIN_6
+    
 
 /* DCI AD acquisiton  */
 #define AD_DCI_DATA0_PORT         GPIOA
@@ -95,6 +99,11 @@
 #define AD_DCI_CLK_PORT 					GPIOA
 #define AD_POWER_DOWN_PORT 				GPIOB
 
+#define AD_CLK_PROT								GPIOA
+
+#define DCI_DATA_VALIDITE_PORT   GPIOC
+
+#define DCI_DATA_VALIDITE_PIN   GPIO_PIN_9
 
 #define AD_DCI_DATA0_PIN       		GPIO_PIN_9
 #define AD_DCI_DATA1_PIN					GPIO_PIN_10
@@ -112,10 +121,14 @@
 #define AD_DCI_HSYNC_PIN 					GPIO_PIN_4
 #define AD_POWER_DOWN_PIN					GPIO_PIN_6
 
+#define AD_CLK_PIN   						GPIO_PIN_8
 
 //NB_LORA SEL PROT
 #define  NB_LORA_SEL_GPIO_PROT           GPIOE
 #define  NB_LORA_SEL_PIN                 GPIO_PIN_15
+
+//
+
 
 void gpio_config(void);
 void gpio_out_config(uint32_t gpio_periph,uint32_t pin,uint32_t mode,uint32_t pull_up_down,uint8_t otype,uint32_t speed);

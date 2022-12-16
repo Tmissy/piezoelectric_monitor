@@ -19,19 +19,29 @@ void gpio_config(){
 	rcu_periph_clock_enable(RCU_GPIOB);
 	rcu_periph_clock_enable(RCU_GPIOC);
 	rcu_periph_clock_enable(RCU_GPIOD);
-	rcu_periph_clock_enable(RCU_GPIOA);
-	rcu_periph_clock_enable(RCU_GPIOA);
-	rcu_periph_clock_enable(RCU_GPIOA);
+	rcu_periph_clock_enable(RCU_GPIOE);
 	
+		/*POWER CONTORL µÁ‘¥øÿ÷∆“˝Ω≈≈‰÷√*/
+	gpio_out_config(POWER_SYSTEM_EN_PROT, POWER_SYSTEM_EN_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
 	
 	/*NB_LORA SEL PROT  “˝Ω≈≈‰÷√*/
 	gpio_in_config(NB_LORA_SEL_GPIO_PROT,NB_LORA_SEL_PIN,GPIO_MODE_INPUT,GPIO_PUPD_NONE);
-	
+
 	if(LORA_NB_SELECT){
-		/*LORA SPI ≈‰÷√ */
-		lora_spi_config();
+		 /* configure SPI1 GPIO */
+    gpio_af_set(GPIOB, GPIO_AF_5, LORA_SPI_SCK_PIN | LORA_SPI_MISO_PIN | LORA_SPI_MOSI_PIN);
+		gpio_out_config(GPIOB, LORA_SPI_SCK_PIN | LORA_SPI_MOSI_PIN,GPIO_MODE_AF,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+		gpio_in_config(GPIOB,LORA_SPI_MISO_PIN,GPIO_MODE_INPUT,GPIO_PUPD_NONE);
+		//lora ∏¥Œª“˝Ω≈
 		gpio_out_config(LORA_RST_PROT,LORA_RST_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+		//NSS “˝Ω≈
+		gpio_out_config(LORA_SPI_NSS_PORT,LORA_SPI_NSS_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+		//NB lora —°‘Ò“˝Ω≈
 		gpio_in_config(NB_LORA_SEL_GPIO_PROT,NB_LORA_SEL_PIN,GPIO_MODE_INPUT,GPIO_PUPD_NONE);
+		debug_printf("LORA  SPI INIT \r\n");
+		
+				/*LORA SPI ≈‰÷√ */
+		lora_spi_config();
 	}else{
 		/*NB USART ≈‰÷√ */
 //		nb_usart_init();
@@ -39,15 +49,27 @@ void gpio_config(){
 	/*MAX31865 SPI ≈‰÷√*/
 //	thermocouple_spi_config();
 	
+
+
 	/*µÁ—πºÏ≤‚ADC≈‰÷√*/
 //	adc_config();
 	/*AD DCI ≈‰÷√*/
-//	dci_config();
+	gpio_out_config(DCI_DATA_VALIDITE_PORT, DCI_DATA_VALIDITE_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+	dci_config();
+	dci_dma_config();
+	
+	/*MS9280 “˝Ω≈≈‰÷√*/
+	gpio_out_config(ADC_STDBY_H_PORT, ADC_STDBY_H_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
 	
 	/*AD8330 IO ≈‰÷√ */
+	gpio_out_config(VGA_EN_PORT, VGA_EN_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+	gpio_out_config(GAIN_CONTROL_PROT,GAIN_CONTROL_PIN,GPIO_MODE_ANALOG,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+		debug_printf("NB port %d\r\n",LORA_NB_SELECT);
 	
 	/*∑¢…‰ PWM IO ≈‰÷√*/
 	timer_plus_output_gpio_config();
+	
+	gpio_bit_set(DCI_DATA_VALIDITE_PORT,DCI_DATA_VALIDITE_PIN);
 	
 }
 
@@ -113,20 +135,27 @@ void gpio_out_config(uint32_t gpio_periph,uint32_t pin,uint32_t mode,uint32_t pu
 */
 void gpio_in_config(uint32_t gpio_periph,uint32_t pin,uint32_t mode,uint32_t pull_up_down)
 {
-	gpio_mode_set(gpio_periph, mode, GPIO_PUPD_PULLDOWN, pin);
+	gpio_mode_set(gpio_periph, mode, pull_up_down, pin);
 }
 
 
 
 
 void powerOff(){
-
+	
+//	gpio_bit_reset(POWER_SYSTEM_EN_PROT,POWER_SYSTEM_EN_PIN);
+//	gpio_bit_reset(VGA_EN_PORT,VGA_EN_PIN);
+//	gpio_bit_set(ADC_STDBY_H_PORT,ADC_STDBY_H_PIN);
 
 }
 
 void powerOn(){
 
-
+	gpio_bit_set(POWER_SYSTEM_EN_PROT,POWER_SYSTEM_EN_PIN);
+  gpio_bit_set(VGA_EN_PORT,VGA_EN_PIN);
+	gpio_bit_set(DCI_DATA_VALIDITE_PORT,DCI_DATA_VALIDITE_PIN);
+	gpio_bit_reset(ADC_STDBY_H_PORT,ADC_STDBY_H_PIN);
+	
 }
 
 

@@ -1,7 +1,7 @@
 Dependencies for Project 'Prj_New', Target 'Target 1': (DO NOT MODIFY !)
-F (..\User\main.c)(0x638D88D1)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x6399693B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -18,14 +18,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -37,21 +37,22 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (..\User\sys\sys.h)(0x62A5D8A1)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\port\port.h)(0x630C5D82)
-I (..\User\dci_adc\dci_adc.h)(0x630D7805)
+I (..\User\dci_adc\dci_adc.h)(0x6397EAD5)
 I (..\User\my_usart\my_usart.h)(0x6389B2F4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
-F (..\User\systick\systick.c)(0x6389A8B6)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+F (..\User\systick\systick.c)(0x638F0B7B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -68,14 +69,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -85,10 +86,10 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (..\User\systick\systick.h)(0x6389A7F1)
-F (..\User\gd32f4xx_it.c)(0x6389A7BD)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_it.o --omf_browse .\objects\gd32f4xx_it.crf --depend .\objects\gd32f4xx_it.d)
+F (..\User\gd32f4xx_it.c)(0x63996B44)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_it.o --omf_browse .\objects\gd32f4xx_it.crf --depend .\objects\gd32f4xx_it.d)
 I (..\User\gd32f4xx_it.h)(0x63525AC7)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -105,14 +106,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -125,11 +126,17 @@ I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-F (..\User\APP\src\lora.c)(0x638D8538)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\lora.o --omf_browse .\objects\lora.crf --depend .\objects\lora.d)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+I (..\User\APP\inc\service_logic.h)(0x63997A92)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\APP\inc\lora.h)(0x6389AFBC)
+I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+F (..\User\APP\src\lora.c)(0x6396F60D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\lora.o --omf_browse .\objects\lora.crf --depend .\objects\lora.d)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -146,14 +153,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -164,19 +171,19 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\APP\inc\crc16.h)(0x621C53DE)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
 F (..\User\APP\src\crc16.c)(0x63771AE9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\crc16.o --omf_browse .\objects\crc16.crf --depend .\objects\crc16.d)
 I (..\User\APP\inc\crc16.h)(0x621C53DE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-F (..\User\APP\src\fmc_flash.c)(0x638AE7AE)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\fmc_flash.o --omf_browse .\objects\fmc_flash.crf --depend .\objects\fmc_flash.d)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
+F (..\User\APP\src\fmc_flash.c)(0x6396EF60)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\fmc_flash.o --omf_browse .\objects\fmc_flash.crf --depend .\objects\fmc_flash.d)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -193,14 +200,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -215,14 +222,15 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
 I (..\User\Driver\SIM7020\dev_sim7020.h)(0x638AEEAE)
 I (..\User\Driver\SIM7020\at_parse.h)(0x62206446)
-I (..\User\Hardware\inc\rtc_config.h)(0x638AF6ED)
+I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
-F (..\User\APP\src\communicate.c)(0x638B05DA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\communicate.o --omf_browse .\objects\communicate.crf --depend .\objects\communicate.d)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+I (..\User\systick\systick.h)(0x6389A7F1)
+F (..\User\APP\src\communicate.c)(0x6391AEB2)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\communicate.o --omf_browse .\objects\communicate.crf --depend .\objects\communicate.d)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -239,14 +247,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -256,26 +264,26 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Driver\SIM7020\dev_sim7020.h)(0x638AEEAE)
 I (..\User\Driver\SIM7020\at_parse.h)(0x62206446)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
 I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
-I (..\User\APP\inc\service_logic.h)(0x638AF10E)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
-I (..\User\Hardware\inc\rtc_config.h)(0x638AF6ED)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\service_logic.h)(0x63997A92)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
-F (..\User\APP\src\service_logic.c)(0x638AFADC)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\service_logic.o --omf_browse .\objects\service_logic.crf --depend .\objects\service_logic.d)
-I (..\User\APP\inc\service_logic.h)(0x638AF10E)
+F (..\User\APP\src\service_logic.c)(0x639BCFDA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\service_logic.o --omf_browse .\objects\service_logic.crf --depend .\objects\service_logic.d)
+I (..\User\APP\inc\service_logic.h)(0x63997A92)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -292,14 +300,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -310,20 +318,20 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
 I (..\User\Hardware\inc\dac_config.h)(0x638AF660)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 F (..\Source\system_gd32f4xx.c)(0x6387080C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\system_gd32f4xx.o --omf_browse .\objects\system_gd32f4xx.crf --depend .\objects\system_gd32f4xx.d)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -340,14 +348,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -359,7 +367,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_dci.c)(0x638965D1)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dci.o --omf_browse .\objects\gd32f4xx_dci.crf --depend .\objects\gd32f4xx_dci.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -375,14 +383,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dbg.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -391,10 +399,10 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-F (..\Firmware\Peripherals\src\gd32f4xx_dma.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dma.o --omf_browse .\objects\gd32f4xx_dma.crf --depend .\objects\gd32f4xx_dma.d)
+F (..\Firmware\Peripherals\src\gd32f4xx_dma.c)(0x63980C4F)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dma.o --omf_browse .\objects\gd32f4xx_dma.crf --depend .\objects\gd32f4xx_dma.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -410,14 +418,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dbg.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -426,10 +434,10 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-F (..\Firmware\Peripherals\src\gd32f4xx_gpio.c)(0x638B0812)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_gpio.o --omf_browse .\objects\gd32f4xx_gpio.crf --depend .\objects\gd32f4xx_gpio.d)
+F (..\Firmware\Peripherals\src\gd32f4xx_gpio.c)(0x63981BC3)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_gpio.o --omf_browse .\objects\gd32f4xx_gpio.crf --depend .\objects\gd32f4xx_gpio.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -446,13 +454,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -464,7 +472,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_misc.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_misc.o --omf_browse .\objects\gd32f4xx_misc.crf --depend .\objects\gd32f4xx_misc.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -481,13 +489,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -499,7 +507,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_pmu.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_pmu.o --omf_browse .\objects\gd32f4xx_pmu.crf --depend .\objects\gd32f4xx_pmu.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -516,13 +524,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -532,9 +540,9 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_rcu.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_rcu.o --omf_browse .\objects\gd32f4xx_rcu.crf --depend .\objects\gd32f4xx_rcu.d)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -551,7 +559,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
@@ -569,7 +577,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_usart.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_usart.o --omf_browse .\objects\gd32f4xx_usart.crf --depend .\objects\gd32f4xx_usart.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -586,14 +594,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -604,7 +612,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_adc.c)(0x63856F67)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_adc.o --omf_browse .\objects\gd32f4xx_adc.crf --depend .\objects\gd32f4xx_adc.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_adc.h)(0x63856FB7)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -620,14 +628,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -639,7 +647,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_crc.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_crc.o --omf_browse .\objects\gd32f4xx_crc.crf --depend .\objects\gd32f4xx_crc.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_crc.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -655,14 +663,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -674,7 +682,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_ctc.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_ctc.o --omf_browse .\objects\gd32f4xx_ctc.crf --depend .\objects\gd32f4xx_ctc.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ctc.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -690,14 +698,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -709,7 +717,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_dac.c)(0x63857BCA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dac.o --omf_browse .\objects\gd32f4xx_dac.crf --depend .\objects\gd32f4xx_dac.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dac.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -725,14 +733,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -744,7 +752,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_dbg.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dbg.o --omf_browse .\objects\gd32f4xx_dbg.crf --depend .\objects\gd32f4xx_dbg.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dbg.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -760,14 +768,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -779,7 +787,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_enet.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_enet.o --omf_browse .\objects\gd32f4xx_enet.crf --depend .\objects\gd32f4xx_enet.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_enet.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -796,14 +804,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -816,7 +824,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 F (..\Firmware\Peripherals\src\gd32f4xx_exmc.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_exmc.o --omf_browse .\objects\gd32f4xx_exmc.crf --depend .\objects\gd32f4xx_exmc.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -832,14 +840,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dbg.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -851,7 +859,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_exti.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_exti.o --omf_browse .\objects\gd32f4xx_exti.crf --depend .\objects\gd32f4xx_exti.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -867,14 +875,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dbg.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -883,10 +891,10 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-F (..\Firmware\Peripherals\src\gd32f4xx_fmc.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_fmc.o --omf_browse .\objects\gd32f4xx_fmc.crf --depend .\objects\gd32f4xx_fmc.d)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+F (..\Firmware\Peripherals\src\gd32f4xx_fmc.c)(0x63905C5A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_fmc.o --omf_browse .\objects\gd32f4xx_fmc.crf --depend .\objects\gd32f4xx_fmc.d)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -909,7 +917,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -921,7 +929,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_fwdgt.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_fwdgt.o --omf_browse .\objects\gd32f4xx_fwdgt.crf --depend .\objects\gd32f4xx_fwdgt.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -938,13 +946,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -956,7 +964,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_i2c.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_i2c.o --omf_browse .\objects\gd32f4xx_i2c.crf --depend .\objects\gd32f4xx_i2c.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_i2c.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -973,14 +981,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -992,7 +1000,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_ipa.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_ipa.o --omf_browse .\objects\gd32f4xx_ipa.crf --depend .\objects\gd32f4xx_ipa.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1009,13 +1017,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1027,7 +1035,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_iref.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_iref.o --omf_browse .\objects\gd32f4xx_iref.crf --depend .\objects\gd32f4xx_iref.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1044,13 +1052,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1062,7 +1070,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_rtc.c)(0x638AB90E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_rtc.o --omf_browse .\objects\gd32f4xx_rtc.crf --depend .\objects\gd32f4xx_rtc.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1079,14 +1087,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_timer.h)(0x638841F2)
@@ -1097,7 +1105,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_sdio.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_sdio.o --omf_browse .\objects\gd32f4xx_sdio.crf --depend .\objects\gd32f4xx_sdio.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_sdio.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1114,14 +1122,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1133,7 +1141,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_spi.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_spi.o --omf_browse .\objects\gd32f4xx_spi.crf --depend .\objects\gd32f4xx_spi.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1150,14 +1158,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_timer.h)(0x638841F2)
@@ -1168,7 +1176,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_syscfg.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_syscfg.o --omf_browse .\objects\gd32f4xx_syscfg.crf --depend .\objects\gd32f4xx_syscfg.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1185,14 +1193,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_timer.h)(0x638841F2)
@@ -1203,7 +1211,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_timer.c)(0x63885361)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_timer.o --omf_browse .\objects\gd32f4xx_timer.crf --depend .\objects\gd32f4xx_timer.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_timer.h)(0x638841F2)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1220,14 +1228,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1238,7 +1246,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_tli.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_tli.o --omf_browse .\objects\gd32f4xx_tli.crf --depend .\objects\gd32f4xx_tli.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1255,14 +1263,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1273,7 +1281,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_trng.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_trng.o --omf_browse .\objects\gd32f4xx_trng.crf --depend .\objects\gd32f4xx_trng.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1290,14 +1298,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1308,7 +1316,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\Firmware\Peripherals\src\gd32f4xx_wwdgt.c)(0x58FDE066)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_wwdgt.o --omf_browse .\objects\gd32f4xx_wwdgt.crf --depend .\objects\gd32f4xx_wwdgt.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1325,14 +1333,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1340,12 +1348,12 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_timer.h)(0x638841F2)
 I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
-F (..\Source\ARM\startup_gd32f450.s)(0x58FDE066)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 527" --pd "GD32F450 SETA 1"--list .\listings\startup_gd32f450.lst --xref -o .\objects\startup_gd32f450.o --depend .\objects\startup_gd32f450.d)
+F (..\Source\ARM\startup_gd32f450.s)(0x6396EBC6)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 527" --pd "GD32F450 SETA 1"--list .\listings\startup_gd32f450.lst --xref -o .\objects\startup_gd32f450.o --depend .\objects\startup_gd32f450.d)
 F (..\Doc\Readme.txt)(0x638479C3)()
-F (..\User\Hardware\src\gpio_config.c)(0x638D88E0)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gpio_config.o --omf_browse .\objects\gpio_config.crf --depend .\objects\gpio_config.d)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+F (..\User\Hardware\src\gpio_config.c)(0x6398450E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gpio_config.o --omf_browse .\objects\gpio_config.crf --depend .\objects\gpio_config.d)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1362,14 +1370,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1378,18 +1386,18 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
-F (..\User\Hardware\src\spi_config.c)(0x638D8565)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\spi_config.o --omf_browse .\objects\spi_config.crf --depend .\objects\spi_config.d)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+F (..\User\Hardware\src\spi_config.c)(0x638E8E5D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\spi_config.o --omf_browse .\objects\spi_config.crf --depend .\objects\spi_config.d)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1406,14 +1414,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1425,7 +1433,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 F (..\User\Hardware\src\adc_config.c)(0x638AECB5)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\adc_config.o --omf_browse .\objects\adc_config.crf --depend .\objects\adc_config.d)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1442,14 +1450,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1459,15 +1467,15 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 F (..\User\Hardware\src\dac_config.c)(0x638AF26A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\dac_config.o --omf_browse .\objects\dac_config.crf --depend .\objects\dac_config.d)
 I (..\User\Hardware\inc\dac_config.h)(0x638AF660)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1484,14 +1492,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1500,10 +1508,10 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-F (..\User\Hardware\src\timer_config.c)(0x638D88C0)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\timer_config.o --omf_browse .\objects\timer_config.crf --depend .\objects\timer_config.d)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
+F (..\User\Hardware\src\timer_config.c)(0x63991BC3)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\timer_config.o --omf_browse .\objects\timer_config.crf --depend .\objects\timer_config.d)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1520,14 +1528,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1538,11 +1546,11 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 F (..\User\Hardware\src\usart_config.c)(0x638D8895)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\usart_config.o --omf_browse .\objects\usart_config.crf --depend .\objects\usart_config.d)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1559,14 +1567,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1577,13 +1585,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
-F (..\User\Hardware\src\dci_config.c)(0x638D7F0E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\dci_config.o --omf_browse .\objects\dci_config.crf --depend .\objects\dci_config.d)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+F (..\User\Hardware\src\dci_config.c)(0x63996EFF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\dci_config.o --omf_browse .\objects\dci_config.crf --depend .\objects\dci_config.d)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1600,14 +1608,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1616,11 +1624,11 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
-F (..\User\Hardware\src\rtc_config.c)(0x638AFB12)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\rtc_config.o --omf_browse .\objects\rtc_config.crf --depend .\objects\rtc_config.d)
-I (..\User\Hardware\inc\rtc_config.h)(0x638AF6ED)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+F (..\User\Hardware\src\rtc_config.c)(0x6391ACAB)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\rtc_config.o --omf_browse .\objects\rtc_config.crf --depend .\objects\rtc_config.d)
+I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1637,14 +1645,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1655,12 +1663,12 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
-F (..\User\Driver\SX1278\sx1278.c)(0x6389A889)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\sx1278.o --omf_browse .\objects\sx1278.crf --depend .\objects\sx1278.d)
+F (..\User\Driver\SX1278\sx1278.c)(0x6392EA89)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\sx1278.o --omf_browse .\objects\sx1278.crf --depend .\objects\sx1278.d)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1677,14 +1685,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1697,7 +1705,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 F (..\User\Driver\SIM7020\at_parse.c)(0x638AFC85)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\at_parse.o --omf_browse .\objects\at_parse.crf --depend .\objects\at_parse.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -1706,7 +1714,7 @@ I (..\User\Driver\SIM7020\at_parse.h)(0x62206446)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
 I (..\Include\core_cm4_simd.h)(0x63525AC6)
@@ -1722,14 +1730,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1748,7 +1756,7 @@ I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
 I (..\User\Driver\SIM7020\dev_sim7020.h)(0x638AEEAE)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
 I (..\Include\core_cm4_simd.h)(0x63525AC6)
@@ -1764,14 +1772,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1786,7 +1794,7 @@ F (..\User\Driver\SIM7020\at_uart_hal.c)(0x638AEFB7)(--c99 --gnu -c --cpu Cortex
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
@@ -1803,14 +1811,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1831,7 +1839,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\User\Driver\SIM7020\dev_sim7020.h)(0x638AEEAE)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
 I (..\Include\core_cm4_simd.h)(0x63525AC6)
@@ -1847,14 +1855,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1866,10 +1874,10 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
 I (..\User\Driver\SIM7020\at_uart_hal.h)(0x638AEE91)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
-F (..\User\Driver\SIM7020\net_protocol.c)(0x638AF29B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\net_protocol.o --omf_browse .\objects\net_protocol.crf --depend .\objects\net_protocol.d)
+F (..\User\Driver\SIM7020\net_protocol.c)(0x6391AD3A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\net_protocol.o --omf_browse .\objects\net_protocol.crf --depend .\objects\net_protocol.d)
 I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
 I (..\User\Driver\SIM7020\dev_sim7020.h)(0x638AEEAE)
 I (..\User\Driver\SIM7020\at_parse.h)(0x62206446)
@@ -1877,7 +1885,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
-I (..\Include\core_cm4.h)(0x63525AC6)
+I (..\Include\core_cm4.h)(0x638D9939)
 I (..\Include\core_cmInstr.h)(0x63525AC6)
 I (..\Include\core_cmFunc.h)(0x63525AC6)
 I (..\Include\core_cm4_simd.h)(0x63525AC6)
@@ -1893,14 +1901,14 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_dci.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dma.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exmc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_exti.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x638AE73A)
+I (..\Firmware\Peripherals\inc\gd32f4xx_fmc.h)(0x63905A1D)
 I (..\Firmware\Peripherals\inc\gd32f4xx_fwdgt.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_gpio.h)(0x63881DAD)
 I (..\Firmware\Peripherals\inc\gd32f4xx_ipa.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_iref.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_misc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_pmu.h)(0x58FDE066)
-I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x638AAFBD)
+I (..\Firmware\Peripherals\inc\gd32f4xx_rcu.h)(0x6396DBF4)
 I (..\Firmware\Peripherals\inc\gd32f4xx_rtc.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_spi.h)(0x63847C54)
 I (..\Firmware\Peripherals\inc\gd32f4xx_syscfg.h)(0x58FDE066)
@@ -1911,16 +1919,16 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
-I (..\User\Hardware\inc\dci_config.h)(0x638B0D30)
-I (..\User\APP\inc\fmc_flash.h)(0x638AF9FA)
+I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
 I (..\User\APP\inc\crc16.h)(0x621C53DE)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\APP\inc\service_logic.h)(0x638AF10E)
-I (..\User\Hardware\inc\timer_config.h)(0x638D88C5)
+I (..\User\APP\inc\service_logic.h)(0x63997A92)
+I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\Hardware\inc\rtc_config.h)(0x638AF6ED)
+I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
 I (..\User\Hardware\inc\dac_config.h)(0x638AF660)
-I (..\User\Hardware\inc\gpio_config.h)(0x638B019F)
+I (..\User\Hardware\inc\gpio_config.h)(0x63972839)

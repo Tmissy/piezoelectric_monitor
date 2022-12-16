@@ -86,8 +86,8 @@ void rtc_configuration(uint16_t sleep_Time_Uint_S)
 void pre_standby(){
 	standy = 1;
 
-	writeFlash_X_Word(FWDGT_RESET_FLAG,sizeof(sleep_time),&standy);
-	debug_printf("standbyFlag = %x\r\n",*(__IO uint32_t*)FWDGT_RESET_FLAG);
+//	writeFlash_X_Word(FWDGT_RESET_FLAG,sizeof(sleep_time),&standy);
+//	debug_printf("standbyFlag = %x\r\n",*(__IO uint32_t*)FWDGT_RESET_FLAG);
 //	flashAddrreadFlashWord(FWDGT_RESET_FLAG)
 //	nvic_system_reset();
 }
