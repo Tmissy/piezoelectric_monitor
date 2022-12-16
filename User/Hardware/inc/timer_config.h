@@ -1,5 +1,5 @@
-#ifndef DAC_CONFIG_H
-#define DAC_CONFIG_H
+#ifndef TIMER_CONFIG_H
+#define TIMER_CONFIG_H
 
 #include "gd32f4xx.h"
 #include "stdbool.h"

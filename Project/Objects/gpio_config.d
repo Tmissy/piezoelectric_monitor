@@ -43,3 +43,4 @@
 .\objects\gpio_config.o: ..\User\Hardware\inc\adc_config.h
 .\objects\gpio_config.o: ..\User\systick\systick.h
 .\objects\gpio_config.o: ..\User\Hardware\inc\dci_config.h
+.\objects\gpio_config.o: ..\User\Hardware\inc\dac_config.h

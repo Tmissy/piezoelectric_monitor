@@ -27,7 +27,40 @@ Project File Date:  12/12/2022
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-".\Objects\Prj_New.axf" - 0 Error(s), 0 Warning(s).
+compiling timer_config.c...
+..\User\Hardware\inc\timer_config.h(15): warning:  #1295-D: Deprecated declaration enable_tiemr3_50hz - give arg types
+  void enable_tiemr3_50hz();
+..\User\Hardware\src\timer_config.c(168): warning:  #177-D: variable "timer_ocinitpara"  was declared but never referenced
+      timer_oc_parameter_struct timer_ocinitpara;
+..\User\Hardware\src\timer_config.c(275): warning:  #177-D: variable "timer_ocintpara"  was declared but never referenced
+  		timer_oc_parameter_struct timer_ocintpara;
+..\User\Hardware\src\timer_config.c(11): warning:  #550-D: variable "mSecondCnt"  was set but never used
+  static uint16_t mSecondCnt = 0;
+..\User\Hardware\src\timer_config.c(12): warning:  #177-D: variable "waitmSecond"  was declared but never referenced
+  static uint16_t waitmSecond = 10;
+..\User\Hardware\src\timer_config.c: 5 warnings, 0 errors
+compiling gd32f4xx_it.c...
+..\User\Hardware\inc\timer_config.h(15): warning:  #1295-D: Deprecated declaration enable_tiemr3_50hz - give arg types
+  void enable_tiemr3_50hz();
+..\User\APP\inc\service_logic.h(74): warning:  #1295-D: Deprecated declaration get_sample_data - give arg types
+  uint16_t* get_sample_data();
+..\User\APP\inc\service_logic.h(80): warning:  #1-D: last line of file ends without a newline
+  #endif /* GD32E50X_EXMC_H */
+..\User\gd32f4xx_it.c(151): warning:  #223-D: function "get_sample_count" declared implicitly
+  				if(sample_count > get_sample_count()){
+..\User\gd32f4xx_it.c(147): warning:  #177-D: variable "firstPowerFlag"  was declared but never referenced
+  		static uint8_t firstPowerFlag = 0;
+..\User\gd32f4xx_it.c(179): warning:  #177-D: variable "firstPowerFlag"  was declared but never referenced
+  		static uint8_t firstPowerFlag = 0;
+..\User\gd32f4xx_it.c(198): warning:  #177-D: variable "count"  was declared but never referenced
+  		static uint16_t count = 0;
+..\User\gd32f4xx_it.c(199): warning:  #177-D: variable "firstPowerFlag"  was declared but never referenced
+  		static uint8_t firstPowerFlag = 0;
+..\User\gd32f4xx_it.c: 8 warnings, 0 errors
+linking...
+Program Size: Code=31108 RO-data=1168 RW-data=336 ZI-data=46880  
+FromELF: creating hex file...
+".\Objects\Prj_New.axf" - 0 Error(s), 13 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -41,7 +74,7 @@ Package Vendor: GigaDevice
   D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

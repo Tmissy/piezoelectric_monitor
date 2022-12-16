@@ -4,6 +4,7 @@
 #include "rtc_config.h"
 #include "lora.h"
 #include "systick.h"
+#include "dac_config.h"
 
 #define FMC_PAGE_SIZE           ((uint16_t)0x2000U)  //8k
 #define FMC_WRITE_START_ADDR    ((uint32_t)0x0800A000U)
@@ -22,8 +23,11 @@ static union
 	uint32_t sensor_parameter_buffer[SENSOR_PRARAMETER_SIZEOF];
 }sensor_parameter_n;
 
-//static uint32_t data[50] = {0};
 
+static union{
+	vga_gain_t channle_gain[CHANNLE_NUM];
+	uint32_t sensor_gain_buffer[CHANNLE_GAIN_BUFFER];
+}sensor_gain_n;
 
 static uint8_t flashData[12] = {0};
 
@@ -228,10 +232,6 @@ fmc_state_enum write_ip_prot_to_flash(uint32_t flashAddr,ip_prot_t* ip_prot){
 	
 	//读取falsh数据；
 	read_datas_to_flash(SENSOR_PARAMETER_ADDR,sensor_parameter_n.sensor_parameter_buffer,SENSOR_PRARAMETER_SIZEOF);
-	if(sensor_parameter_n.sensor_parameter_buffer == NULL){
-			debug_printf("flash data overflow\r\n");
-			return FLASH_DATA_OVERFLOW;
-	}
 	//修改数据；
 	sensor_parameter_n.sersor_parameter.ip_prot.flag = PARAMETER_WRITE_FLASH_FALG;
 	sensor_parameter_n.sersor_parameter.ip_prot.ip[0] = ip_prot->ip[0];
@@ -297,6 +297,47 @@ uint32_t read_lora_power_factor_from_flash(){
 		return 0;
 	}
 }
+
+
+
+/*!
+    \brief      						 写入channel gain
+    \param[flashAddr]  			 flash 地址
+    \param[network_id] 			 待写入的ip地址和端口
+    \retval     			 none
+*/
+fmc_state_enum write_channel_gain_to_flash(uint32_t flashAddr,uint8_t channle,uint8_t gain){
+	
+	fmc_state_enum status = FMC_READY;
+	if(channle > CHANNLE_NUM){
+		return 0xff;
+	}
+	//读取falsh数据；
+	read_datas_to_flash(CHANNALE_GAIN_ADDR,sensor_gain_n.sensor_gain_buffer,CHANNLE_GAIN_BUFFER);
+	//修改数据；
+	sensor_gain_n.channle_gain[channle-1].flag = PARAMETER_WRITE_FLASH_FALG;
+	sensor_gain_n.channle_gain[channle-1].gain = gain;
+	//数据回写
+	status = write_datas_to_flash(flashAddr,CHANNLE_GAIN_BUFFER,sensor_gain_n.sensor_gain_buffer);
+	
+	return status;
+}
+
+
+
+uint8_t read_channel_gain_from_flash(uint32_t flashAddr,uint8_t channle){
+	
+	uint32_t  ret = 0;
+	if(*(__IO uint32_t*)(flashAddr+((channle-1)*CHANNEL_GAIN_SIZIOF)) == PARAMETER_WRITE_FLASH_FALG){
+		ret =  *(__IO uint32_t*)(flashAddr+((channle-1)*CHANNEL_GAIN_SIZIOF)+WORD);
+	}else{
+		ret = 0;
+	}
+	return  (uint8_t)ret;
+
+}
+
+
 
 
 uint64_t read_double_words_form_flash(uint32_t flashAddr)

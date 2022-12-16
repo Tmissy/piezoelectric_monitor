@@ -86,7 +86,7 @@ void timer3_master_config(void)
 		//发送使能信号作为触发的输出
 		timer_master_output_trigger_source_select(TIMER3, TIMER_TRI_OUT_SRC_UPDATE);
  /* enable a TIMER */  
-//		timer_enable(TIMER3);
+		timer_enable(TIMER3);
 }
 
 
@@ -199,10 +199,10 @@ void timer1_master3_slave1_config(void)
 				 /* slave mode selection: TIMER0  事件模式*/
     timer_slave_mode_select(TIMER1,TIMER_SLAVE_MODE_EVENT);
 		
-    /* channel DMA request source selection */
-    timer_channel_dma_request_source_select(TIMER1,TIMER_DMAREQUEST_UPDATEEVENT);
-    /* TIMER0 update DMA request enable */
-    timer_dma_enable(TIMER1,TIMER_DMA_UPD);
+//    /* channel DMA request source selection */
+//    timer_channel_dma_request_source_select(TIMER1,TIMER_DMAREQUEST_UPDATEEVENT);
+//    /* TIMER0 update DMA request enable */
+//    timer_dma_enable(TIMER1,TIMER_DMA_UPD);
 
 }
 

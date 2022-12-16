@@ -109,37 +109,15 @@ void LoRa_execute_instruction(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriutg_d
 			debug_printf("plora->LoRaRxData_t.arg.probeId= %d\r\n",plora->LoRaRxData_t.arg.channle_Id);
 			debug_printf("plora->LoRaRxData_t.arg.gain = %d\r\n",plora->LoRaRxData_t.arg.gain);
 			debug_printf("plora->LoRaRxData_t.arg.avg= %d\r\n",plora->LoRaRxData_t.arg.avg);
-			//将 flash 存储的参数取出
-//			probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
-			debug_printf("probeGainAvg addr : %p\r\n",probeGainAvg);
-			//擦除页
-
-
-			//更改参数
-			if((plora->LoRaRxData_t.arg.channle_Id > 0) && (plora->LoRaRxData_t.arg.channle_Id <= 16)){
-				sensorParam[plora->LoRaRxData_t.arg.channle_Id - 1].gain = plora->LoRaRxData_t.arg.gain;
-				sensorParam[plora->LoRaRxData_t.arg.channle_Id - 1].avg = plora->LoRaRxData_t.arg.avg;
-			}	
-			if((sensorParam[plora->LoRaRxData_t.arg.channle_Id - 1].gain >= 0 )&& (sensorParam[plora->LoRaRxData_t.arg.channle_Id - 1].gain <= 48 )){
-				*(probeGainAvg+2*(plora->LoRaRxData_t.arg.channle_Id - 1)) = sensorParam[plora->LoRaRxData_t.arg.channle_Id - 1].gain;
+		
+			if(write_channel_gain_to_flash(CHANNALE_GAIN_ADDR,plora->LoRaRxData_t.arg.channle_Id,plora->LoRaRxData_t.arg.gain) == FMC_READY){
+				loraTxData(plora, oriutg_data,'O');
+				debug_printf("set gain ok\r\n");
+			}else{
+				loraTxData(plora, oriutg_data,'F');
+				debug_printf("set gain failed\r\n");
 			}
-//			*(probeGainAvg+2*(plora->LoRaRxData_t.arg.channle_Id - 1)+1) = sensorParam[plora->LoRaRxData_t.arg.channle_Id - 1].avg;			
-			//将接收到的参数写回
-			for(uint8_t i = 0;i < MAX_PROBE_NUM; i++ ){
-				sensorParam[i].gain = *(probeGainAvg+2*i);
-				sensorParam[i].avg = *(probeGainAvg+2*i+1);
-				debug_printf("probenum: %d\r\n",i);
-				debug_printf("GAIN: %d\r\n",sensorParam[i].gain );
-				debug_printf("AVG: %d\r\n",sensorParam[i].avg);
-			}
-//		if(writeFlash_X_Word(CHANNALE_PRAREMETER,MAX_PROBE_NUM*2,probeGainAvg)){
-//			debug_printf("\r\nset gain succeed\r\n");
-//			loraTxData(plora, oriutg_data,'O');
-//		}else{
-//			debug_printf("\r\nset gain failed\r\n");
-//			loraTxData(plora, oriutg_data,'F');
-//		}
-		memset(plora->LoRaRxData_t.lora_rxBuf,0,256);
+			memset(plora->LoRaRxData_t.lora_rxBuf,0,256);
 		break ;
 		case Jion_Network_Instruction:
 			debug_printf("\r\n recieve join network instruction \r\n");
@@ -215,19 +193,16 @@ void lora_passivity_communication(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriu
 				//网络号
 				oriutg_data->loraTxData.networkId = read_network_id_from_flash(NETWORK_ID_ADDR);
 				//增益
-//				probeGainAvg = readFlash_X_Word(CHANNALE_PRAREMETER,16);
-//				oriutg_data->loraTxData.gain = *(probeGainAvg+2*(oriutg_data->loraTxData.channel_num-1));
-//				set_gain(oriutg_data->loraTxData.gain);
+				oriutg_data->loraTxData.gain = read_channel_gain_from_flash(CHANNALE_GAIN_ADDR,oriutg_data->loraTxData.channel_num);
+				set_gain(read_channel_gain_from_flash(CHANNALE_GAIN_ADDR,oriutg_data->loraTxData.channel_num));
 				debug_printf("gain = %d \r\n",oriutg_data->loraTxData.gain);
 				//平均
-//				oriutg_data->loraTxData.average = *(probeGainAvg+2*(oriutg_data->loraTxData.channel_num-1)+1);
 				oriutg_data->loraTxData.average = 10;
 				debug_printf("avrage = %d \r\n",oriutg_data->loraTxData.average);
 				//电量采集
 				oriutg_data->loraTxData.Battery = 100;
 //	BatGetPrecent();
 				debug_printf("battery  = \r\n");
-				
 				//开始数据采集
 				sample_start(oriutg_data,1);
 				//温度采集
@@ -236,7 +211,7 @@ void lora_passivity_communication(Lora_Control_Def *plora,Tx_ORIUTG_Data_t* oriu
 //				oriutg_data->loraTxData.temperate = ThermGetLastTemp() ;
 				debug_printf("temperature = \r\n");
 				//关闭发射接收电压
-//				powerOff();
+				powerOff();
 				main_state = LoRa_Tx_ORIGTG_Data_Status;
 				tickstart = Get_Tick();
 				powerOff();

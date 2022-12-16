@@ -1,5 +1,5 @@
 Dependencies for Project 'Prj_New', Target 'Target 1': (DO NOT MODIFY !)
-F (..\User\main.c)(0x6399693B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\User\main.c)(0x639C249C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -40,16 +40,17 @@ I (..\User\port\port.h)(0x630C5D82)
 I (..\User\dci_adc\dci_adc.h)(0x6397EAD5)
 I (..\User\my_usart\my_usart.h)(0x6389B2F4)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
+I (..\User\Hardware\inc\dac_config.h)(0x639C19FD)
 F (..\User\systick\systick.c)(0x638F0B7B)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
@@ -86,7 +87,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (..\User\systick\systick.h)(0x6389A7F1)
-F (..\User\gd32f4xx_it.c)(0x63996B44)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_it.o --omf_browse .\objects\gd32f4xx_it.crf --depend .\objects\gd32f4xx_it.d)
+F (..\User\gd32f4xx_it.c)(0x639C2514)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_it.o --omf_browse .\objects\gd32f4xx_it.crf --depend .\objects\gd32f4xx_it.d)
 I (..\User\gd32f4xx_it.h)(0x63525AC7)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
@@ -128,10 +129,10 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\User\APP\inc\service_logic.h)(0x63997A92)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 F (..\User\APP\src\lora.c)(0x6396F60D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\lora.o --omf_browse .\objects\lora.crf --depend .\objects\lora.d)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
@@ -172,16 +173,16 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\APP\inc\crc16.h)(0x621C53DE)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 F (..\User\APP\src\crc16.c)(0x63771AE9)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\crc16.o --omf_browse .\objects\crc16.crf --depend .\objects\crc16.d)
 I (..\User\APP\inc\crc16.h)(0x621C53DE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
-F (..\User\APP\src\fmc_flash.c)(0x6396EF60)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\fmc_flash.o --omf_browse .\objects\fmc_flash.crf --depend .\objects\fmc_flash.d)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+F (..\User\APP\src\fmc_flash.c)(0x639C1D2F)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\fmc_flash.o --omf_browse .\objects\fmc_flash.crf --depend .\objects\fmc_flash.d)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -227,6 +228,7 @@ I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\User\systick\systick.h)(0x6389A7F1)
+I (..\User\Hardware\inc\dac_config.h)(0x639C19FD)
 F (..\User\APP\src\communicate.c)(0x6391AEB2)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\communicate.o --omf_browse .\objects\communicate.crf --depend .\objects\communicate.d)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
@@ -264,7 +266,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
@@ -275,12 +277,12 @@ I (..\User\Driver\SIM7020\at_parse.h)(0x62206446)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
 I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 I (..\User\APP\inc\service_logic.h)(0x63997A92)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
-F (..\User\APP\src\service_logic.c)(0x639BCFDA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\service_logic.o --omf_browse .\objects\service_logic.crf --depend .\objects\service_logic.d)
+F (..\User\APP\src\service_logic.c)(0x639C217E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\service_logic.o --omf_browse .\objects\service_logic.crf --depend .\objects\service_logic.d)
 I (..\User\APP\inc\service_logic.h)(0x63997A92)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
@@ -319,16 +321,16 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
-I (..\User\Hardware\inc\dac_config.h)(0x638AF660)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\dac_config.h)(0x639C19FD)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 F (..\Source\system_gd32f4xx.c)(0x6387080C)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\system_gd32f4xx.o --omf_browse .\objects\system_gd32f4xx.crf --depend .\objects\system_gd32f4xx.d)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
@@ -714,7 +716,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-F (..\Firmware\Peripherals\src\gd32f4xx_dac.c)(0x63857BCA)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dac.o --omf_browse .\objects\gd32f4xx_dac.crf --depend .\objects\gd32f4xx_dac.d)
+F (..\Firmware\Peripherals\src\gd32f4xx_dac.c)(0x639C077E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gd32f4xx_dac.o --omf_browse .\objects\gd32f4xx_dac.crf --depend .\objects\gd32f4xx_dac.d)
 I (..\Firmware\Peripherals\inc\gd32f4xx_dac.h)(0x58FDE066)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
@@ -1350,8 +1352,8 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 F (..\Source\ARM\startup_gd32f450.s)(0x6396EBC6)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 527" --pd "GD32F450 SETA 1"--list .\listings\startup_gd32f450.lst --xref -o .\objects\startup_gd32f450.o --depend .\objects\startup_gd32f450.d)
 F (..\Doc\Readme.txt)(0x638479C3)()
-F (..\User\Hardware\src\gpio_config.c)(0x6398450E)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gpio_config.o --omf_browse .\objects\gpio_config.crf --depend .\objects\gpio_config.d)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+F (..\User\Hardware\src\gpio_config.c)(0x639C0475)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\gpio_config.o --omf_browse .\objects\gpio_config.crf --depend .\objects\gpio_config.d)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1386,7 +1388,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
@@ -1394,6 +1396,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
+I (..\User\Hardware\inc\dac_config.h)(0x639C19FD)
 F (..\User\Hardware\src\spi_config.c)(0x638E8E5D)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\spi_config.o --omf_browse .\objects\spi_config.crf --depend .\objects\spi_config.d)
 I (..\User\Hardware\inc\spi_config.h)(0x638B0185)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
@@ -1467,13 +1470,13 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
-F (..\User\Hardware\src\dac_config.c)(0x638AF26A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\dac_config.o --omf_browse .\objects\dac_config.crf --depend .\objects\dac_config.d)
-I (..\User\Hardware\inc\dac_config.h)(0x638AF660)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
+F (..\User\Hardware\src\dac_config.c)(0x639C1D26)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\dac_config.o --omf_browse .\objects\dac_config.crf --depend .\objects\dac_config.d)
+I (..\User\Hardware\inc\dac_config.h)(0x639C19FD)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1508,8 +1511,8 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-F (..\User\Hardware\src\timer_config.c)(0x63991BC3)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\timer_config.o --omf_browse .\objects\timer_config.crf --depend .\objects\timer_config.d)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+F (..\User\Hardware\src\timer_config.c)(0x639C24F8)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\timer_config.o --omf_browse .\objects\timer_config.crf --depend .\objects\timer_config.d)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
 I (..\Include\core_cm4.h)(0x638D9939)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
@@ -1546,7 +1549,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599ECD2E)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 F (..\User\Hardware\src\usart_config.c)(0x638D8895)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\usart_config.o --omf_browse .\objects\usart_config.crf --depend .\objects\usart_config.d)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
@@ -1585,9 +1588,9 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 F (..\User\Hardware\src\dci_config.c)(0x63996EFF)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\dci_config.o --omf_browse .\objects\dci_config.crf --depend .\objects\dci_config.d)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
@@ -1624,7 +1627,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_tli.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_trng.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 F (..\User\Hardware\src\rtc_config.c)(0x6391ACAB)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\rtc_config.o --omf_browse .\objects\rtc_config.crf --depend .\objects\rtc_config.d)
 I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
 I (..\Include\gd32f4xx.h)(0x638AFC2E)
@@ -1663,7 +1666,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_usart.h)(0x58FDE066)
 I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 F (..\User\Driver\SX1278\sx1278.c)(0x6392EA89)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\sx1278.o --omf_browse .\objects\sx1278.crf --depend .\objects\sx1278.d)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
@@ -1705,7 +1708,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (..\User\systick\systick.h)(0x6389A7F1)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\User\Hardware\inc\usart_config.h)(0x638B0532)
 F (..\User\Driver\SIM7020\at_parse.c)(0x638AFC85)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\at_parse.o --omf_browse .\objects\at_parse.crf --depend .\objects\at_parse.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -1874,7 +1877,7 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
 I (..\User\Driver\SIM7020\at_uart_hal.h)(0x638AEE91)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Driver\SIM7020\net_protocol.h)(0x63774B52)
 F (..\User\Driver\SIM7020\net_protocol.c)(0x6391AD3A)(--c99 --gnu -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\Firmware\Peripherals\inc -I ..\Include -I ..\User\sys -I ..\User\systick -I ..\User\port -I ..\User\my_usart -I ..\User\dci_adc -I ..\User\Hardware\src -I ..\User\Hardware\inc -I ..\User\Driver\src -I ..\User\Driver\inc -I ..\Firmware\Peripherals\inc -I ..\Firmware\Peripherals\src -I ..\User\Driver\SX1278 -I ..\User\APP\inc -I ..\User\APP\src -I ..\User\Driver\SIM7020-I.\RTE\_Target_1-I"D:\Program Files (x86)\GigaDevice\GD32F4xx_DFP\3.0.0\Device\F4XX\Include"-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="527" -DGD32F450 -DGD32F450-o .\objects\net_protocol.o --omf_browse .\objects\net_protocol.crf --depend .\objects\net_protocol.d)
@@ -1920,15 +1923,15 @@ I (..\Firmware\Peripherals\inc\gd32f4xx_wwdgt.h)(0x58FDE066)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599ECD2C)
 I (..\User\APP\inc\communicate.h)(0x638AA890)
 I (..\User\Hardware\inc\dci_config.h)(0x63996C45)
-I (..\User\APP\inc\fmc_flash.h)(0x6392E823)
+I (..\User\APP\inc\fmc_flash.h)(0x639C18E3)
 I (..\User\APP\inc\crc16.h)(0x621C53DE)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (..\User\APP\inc\service_logic.h)(0x63997A92)
-I (..\User\Hardware\inc\timer_config.h)(0x6396ED30)
+I (..\User\Hardware\inc\timer_config.h)(0x639C0325)
 I (..\User\APP\inc\lora.h)(0x6389AFBC)
 I (..\User\Driver\SX1278\sx1278.h)(0x6389A717)
 I (..\User\Hardware\inc\adc_config.h)(0x638AECDD)
 I (..\User\systick\systick.h)(0x6389A7F1)
 I (..\User\Hardware\inc\rtc_config.h)(0x639053F1)
-I (..\User\Hardware\inc\dac_config.h)(0x638AF660)
-I (..\User\Hardware\inc\gpio_config.h)(0x63972839)
+I (..\User\Hardware\inc\dac_config.h)(0x639C19FD)
+I (..\User\Hardware\inc\gpio_config.h)(0x639BFE1C)

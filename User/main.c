@@ -13,6 +13,7 @@
 #include "lora.h"
 #include "communicate.h"
 #include "fmc_flash.h"
+#include "dac_config.h"
 u8 flag_uart_out = 0;			//串口发出标志位：0--不发出，1--发出
 
 u16 dci_average_count = 1024;		//设置多少次平均

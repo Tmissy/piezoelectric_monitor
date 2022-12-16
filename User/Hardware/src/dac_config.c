@@ -2,7 +2,7 @@
 
 
 #define GAIN_RANGE  48
-#define GAIN_1V_VALUE   1241
+#define GAIN_1V_VALUE    1241 //1241
 //#define GAIN_1V5_VALUE   1862
 
 /*!
@@ -13,17 +13,17 @@
 */
 void dac_config(void){
 		
-		rcu_periph_clock_enable(RCU_DAC);
+
 	
     dac_deinit();
 		rcu_periph_clock_enable(RCU_DAC);
     /* configure the DAC_OUT0 */
-    dac_trigger_disable(DAC0);
-    dac_wave_mode_config(DAC0, DAC_WAVE_DISABLE);
-    dac_output_buffer_enable(DAC0);
+    dac_trigger_disable(DAC1);
+    dac_wave_mode_config(DAC1, DAC_WAVE_DISABLE);
+    dac_output_buffer_enable(DAC1);
 
-		dac_data_set(DAC0, DAC_ALIGN_12B_R, GAIN_1V_VALUE);                                  //设置DAC0 数据
-		dac_enable(DAC0);
+		dac_data_set(DAC1, DAC_ALIGN_12B_R, GAIN_1V_VALUE);                                  //设置DAC0 数据
+		dac_enable(DAC1);
 
 }
 
@@ -33,7 +33,7 @@ void set_gain(uint8_t gain){
 		return ;
 	}
 	uint16_t convert_gain = gain *(GAIN_1V_VALUE)/GAIN_RANGE;
-	dac_data_set(DAC0, DAC_ALIGN_12B_R, convert_gain); 
+	dac_data_set(DAC1, DAC_ALIGN_12B_R, convert_gain); 
 	
 }
 

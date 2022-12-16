@@ -4,6 +4,7 @@
 #include "usart_config.h"
 #include "adc_config.h"
 #include "dci_config.h"
+#include "dac_config.h"
 
 #define LORA_NB_SELECT  gpio_input_bit_get(NB_LORA_SEL_GPIO_PROT,NB_LORA_SEL_PIN)
 
@@ -61,14 +62,16 @@ void gpio_config(){
 	/*MS9280 “˝Ω≈≈‰÷√*/
 	gpio_out_config(ADC_STDBY_H_PORT, ADC_STDBY_H_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
 	
+	/* VGA ‘ˆ“Êøÿ÷∆*/
+	gpio_out_config(GAIN_CONTROL_PROT,GAIN_CONTROL_PIN,GPIO_MODE_ANALOG,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
+	dac_config();
+	
 	/*AD8330 IO ≈‰÷√ */
 	gpio_out_config(VGA_EN_PORT, VGA_EN_PIN,GPIO_MODE_OUTPUT,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
-	gpio_out_config(GAIN_CONTROL_PROT,GAIN_CONTROL_PIN,GPIO_MODE_ANALOG,GPIO_PUPD_NONE,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ);
-		debug_printf("NB port %d\r\n",LORA_NB_SELECT);
+	debug_printf("NB port %d\r\n",LORA_NB_SELECT);
 	
 	/*∑¢…‰ PWM IO ≈‰÷√*/
 	timer_plus_output_gpio_config();
-	
 	gpio_bit_set(DCI_DATA_VALIDITE_PORT,DCI_DATA_VALIDITE_PIN);
 	
 }

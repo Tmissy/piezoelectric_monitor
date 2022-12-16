@@ -50,7 +50,7 @@ typedef struct{
 #define BATTERY_CAPACITY_ADDR   (0x0800c000)
 #define BATTERY_CAPACITY_FLAG  (BATTERY_CAPACITY_ADDR)
 #define BATTERY_CAPACITY_BASE  (BATTERY_CAPACITY_ADDR +WORD)
-#define CHANNALE_PRAREMETER    	 (0x08010000)
+#define CHANNALE_GAIN_ADDR    	 (0x08010000)
 #define RTC_STANDBY_TIME_ADDR    (0x08020000)
 #define SENSOR_PARAMETER_ADDR    (0x08040000)
 #define SENSOR_ID_ADDR           (SENSOR_PARAMETER_ADDR+WORD)
@@ -84,6 +84,10 @@ void reload_ip_port(uint32_t flashAddr);
 
 fmc_state_enum write_lora_power_factor_to_flash(uint32_t flashAddr,lora_power_factor_t* lora_power_factor);
 uint32_t read_lora_power_factor_from_flash();
+
+fmc_state_enum write_channel_gain_to_flash(uint32_t flashAddr,uint8_t channle,uint8_t gain);
+uint8_t read_channel_gain_from_flash(uint32_t flashAddr,uint8_t channle);
+
 
 fmc_state_enum write_Flash_double_Word(uint32_t address, uint64_t Data);
 

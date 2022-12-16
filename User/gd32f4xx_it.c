@@ -198,8 +198,8 @@ void TIMER7_UP_TIMER12_IRQHandler(void)
 		static uint16_t count = 0;
 		static uint8_t firstPowerFlag = 0;
     if(SET == timer_interrupt_flag_get(TIMER7, TIMER_INT_UP)){
-
 			timer_disable(TIMER1);
+			timer_disable(TIMER2);
 			timer_disable(TIMER7);
 			gpio_bit_set(DCI_DATA_VALIDITE_PORT,DCI_DATA_VALIDITE_PIN);
 			acumulator_sensor_data(dci_sampling_value_buffer);
@@ -207,7 +207,6 @@ void TIMER7_UP_TIMER12_IRQHandler(void)
 			dma_channel_disable(DMA1,DMA_CH1);	//Ê¹ÄÜDMAµÄCH1
 			dci_config();
 			dci_dma_config();
-			
 			timer_interrupt_flag_clear(TIMER7, TIMER_INT_UP);
     }
 }
